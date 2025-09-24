@@ -22,7 +22,9 @@ import {
   HeartHandshake,
   ChevronDown,
   Menu,
-  X
+  X,
+  Book,
+  TrendingUp
 } from "lucide-react"; 
 
 const ProfessionalNavbar = () => {
@@ -30,38 +32,12 @@ const ProfessionalNavbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
 
   const navItems = [
-    // {
-    //   name: "Dashboard",
-    //   icon: <Home size={18} />,
-    //   path: "/"
-    // },
     {
       name: "Resume",
       icon: <FileText size={18} />,
       hasDropdown: true,
       dropdownContent: (
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 w-full max-w-4xl">
-          {/* Upload Section */}
-          {/* <div className="space-y-2">
-            <div className="flex items-center gap-2 text-blue-600 font-semibold mb-2">
-              <Upload size={16} />
-              <span>Upload & Analyze</span>
-            </div>
-            <Link 
-              to="/upload" 
-              className="flex items-center gap-2 p-2 rounded-lg hover:bg-blue-50 transition-colors group"
-              onClick={() => setActiveDropdown(null)}
-            >
-              <div className="bg-blue-100 p-2 rounded-lg group-hover:bg-blue-200 transition-colors">
-                <Upload size={14} className="text-blue-600" />
-              </div>
-              <div>
-                <div className="font-medium">Upload Resume</div>
-                <div className="text-xs text-gray-500">Analyze your existing resume</div>
-              </div>
-            </Link>
-          </div> */}
-
           {/* Templates Section */}
           <div className="space-y-2">
             <div className="flex items-center gap-2 text-blue-600 font-semibold mb-2">
@@ -159,6 +135,197 @@ const ProfessionalNavbar = () => {
               { title: "AI Resume Builder", icon: <Wand2 size={14} />, desc: "Create resumes with AI assistance", path: "/ai-builder" },
               { title: "Resume Checker", icon: <CheckSquare size={14} />, desc: "Analyze and improve your resume", path: "/checker" },
               { title: "Skills Optimizer", icon: <Brain size={14} />, desc: "Enhance your skills section", path: "/resume-skills" }
+            ].map((item, index) => (
+              <Link 
+                key={index}
+                to={item.path}
+                className="flex items-center gap-2 p-2 rounded-lg hover:bg-blue-50 transition-colors group"
+                onClick={() => setActiveDropdown(null)}
+              >
+                <div className="bg-blue-100 p-2 rounded-lg group-hover:bg-blue-200 transition-colors">
+                  {item.icon}
+                </div>
+                <div>
+                  <div className="font-medium">{item.title}</div>
+                  <div className="text-xs text-gray-500">{item.desc}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )
+    },
+    {
+      name: "Resources",
+      icon: <Book size={18} />,
+      hasDropdown: true,
+      dropdownContent: (
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 w-full max-w-4xl">
+          {/* Resume Resources */}
+          <div className="space-y-2">
+            <div className="flex items-center gap-2 text-blue-600 font-semibold mb-2">
+              <FileText size={16} />
+              <span>Resume Resources</span>
+            </div>
+            {[
+              { title: "Resume Writing Guide", icon: <FileText size={14} />, desc: "Detailed guides on writing effective resumes", path: "/resources/resume-writing" },
+              { title: "Formatting Guide", icon: <LayoutTemplate size={14} />, desc: "How to properly format your resume", path: "/resources/formatting" },
+              { title: "Resume Optimization", icon: <Wand2 size={14} />, desc: "Tips to optimize your resume for ATS", path: "/resources/optimization" },
+              { title: "Resume Mistakes", icon: <CheckSquare size={14} />, desc: "Common mistakes to avoid", path: "/resources/mistakes" }
+            ].map((item, index) => (
+              <Link 
+                key={index}
+                to={item.path}
+                className="flex items-center gap-2 p-2 rounded-lg hover:bg-blue-50 transition-colors group"
+                onClick={() => setActiveDropdown(null)}
+              >
+                <div className="bg-blue-100 p-2 rounded-lg group-hover:bg-blue-200 transition-colors">
+                  {item.icon}
+                </div>
+                <div>
+                  <div className="font-medium">{item.title}</div>
+                  <div className="text-xs text-gray-500">{item.desc}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* Cover Letter Resources */}
+          <div className="space-y-2">
+            <div className="flex items-center gap-2 text-blue-600 font-semibold mb-2">
+              <BookOpen size={16} />
+              <span>Cover Letter Resources</span>
+            </div>
+            {[
+              { title: "Cover Letter Writing", icon: <BookOpen size={14} />, desc: "In-depth guides on writing cover letters", path: "/resources/cover-letter-writing" },
+              { title: "Cover Letter Structure", icon: <LayoutTemplate size={14} />, desc: "Proper structure and formatting", path: "/resources/cover-letter-structure" },
+              { title: "Cover Letter Examples", icon: <FileStack size={14} />, desc: "Professional examples for inspiration", path: "/resources/cover-letter-examples" },
+              { title: "Customization Guide", icon: <Wand2 size={14} />, desc: "How to tailor cover letters for each job", path: "/resources/cover-letter-customization" }
+            ].map((item, index) => (
+              <Link 
+                key={index}
+                to={item.path}
+                className="flex items-center gap-2 p-2 rounded-lg hover:bg-blue-50 transition-colors group"
+                onClick={() => setActiveDropdown(null)}
+              >
+                <div className="bg-blue-100 p-2 rounded-lg group-hover:bg-blue-200 transition-colors">
+                  {item.icon}
+                </div>
+                <div>
+                  <div className="font-medium">{item.title}</div>
+                  <div className="text-xs text-gray-500">{item.desc}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* Interview Resources */}
+          <div className="space-y-2">
+            <div className="flex items-center gap-2 text-blue-600 font-semibold mb-2">
+              <Users size={16} />
+              <span>Interview Resources</span>
+            </div>
+            {[
+              { title: "Interview Preparation", icon: <Brain size={14} />, desc: "Complete guide to interview preparation", path: "/resources/interview-preparation" },
+              { title: "Common Questions", icon: <BookOpen size={14} />, desc: "Most frequently asked interview questions", path: "/resources/interview-questions" },
+              { title: "Behavioral Interviews", icon: <Users size={14} />, desc: "Master behavioral interview techniques", path: "/resources/behavioral-interviews" },
+              { title: "Technical Interviews", icon: <Code size={14} />, desc: "Prepare for technical interviews", path: "/resources/technical-interviews" },
+              { title: "Salary Negotiation", icon: <TrendingUp size={14} />, desc: "Guide to negotiating your salary", path: "/resources/salary-negotiation" }
+            ].map((item, index) => (
+              <Link 
+                key={index}
+                to={item.path}
+                className="flex items-center gap-2 p-2 rounded-lg hover:bg-blue-50 transition-colors group"
+                onClick={() => setActiveDropdown(null)}
+              >
+                <div className="bg-blue-100 p-2 rounded-lg group-hover:bg-blue-200 transition-colors">
+                  {item.icon}
+                </div>
+                <div>
+                  <div className="font-medium">{item.title}</div>
+                  <div className="text-xs text-gray-500">{item.desc}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )
+    },
+    {
+      name: "Blog",
+      icon: <BookOpen size={18} />,
+      hasDropdown: true,
+      dropdownContent: (
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 w-full max-w-4xl">
+          {/* Resume Tips */}
+          <div className="space-y-2">
+            <div className="flex items-center gap-2 text-blue-600 font-semibold mb-2">
+              <FileText size={16} />
+              <span>Resume Tips</span>
+            </div>
+            {[
+              { title: "Latest Resume Trends", icon: <TrendingUp size={14} />, desc: "Stay updated with current resume trends", path: "/blog/resume-trends" },
+              { title: "ATS Optimization", icon: <Wand2 size={14} />, desc: "How to beat applicant tracking systems", path: "/blog/ats-optimization" },
+              { title: "Resume Mistakes to Avoid", icon: <CheckSquare size={14} />, desc: "Common pitfalls and how to avoid them", path: "/blog/resume-mistakes" },
+              { title: "Success Stories", icon: <BookOpen size={14} />, desc: "Real success stories from our users", path: "/blog/success-stories" }
+            ].map((item, index) => (
+              <Link 
+                key={index}
+                to={item.path}
+                className="flex items-center gap-2 p-2 rounded-lg hover:bg-blue-50 transition-colors group"
+                onClick={() => setActiveDropdown(null)}
+              >
+                <div className="bg-blue-100 p-2 rounded-lg group-hover:bg-blue-200 transition-colors">
+                  {item.icon}
+                </div>
+                <div>
+                  <div className="font-medium">{item.title}</div>
+                  <div className="text-xs text-gray-500">{item.desc}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* Career Advice */}
+          <div className="space-y-2">
+            <div className="flex items-center gap-2 text-blue-600 font-semibold mb-2">
+              <Briefcase size={16} />
+              <span>Career Advice</span>
+            </div>
+            {[
+              { title: "Job Search Strategies", icon: <TrendingUp size={14} />, desc: "Effective strategies for your job hunt", path: "/blog/job-search-strategies" },
+              { title: "Interview Tips", icon: <Users size={14} />, desc: "Ace your interviews with expert advice", path: "/blog/interview-tips" },
+              { title: "Networking Guide", icon: <HeartHandshake size={14} />, desc: "Build meaningful professional connections", path: "/blog/networking-guide" },
+              { title: "Remote Work Tips", icon: <Code size={14} />, desc: "Thriving in remote work environments", path: "/blog/remote-work-tips" }
+            ].map((item, index) => (
+              <Link 
+                key={index}
+                to={item.path}
+                className="flex items-center gap-2 p-2 rounded-lg hover:bg-blue-50 transition-colors group"
+                onClick={() => setActiveDropdown(null)}
+              >
+                <div className="bg-blue-100 p-2 rounded-lg group-hover:bg-blue-200 transition-colors">
+                  {item.icon}
+                </div>
+                <div>
+                  <div className="font-medium">{item.title}</div>
+                  <div className="text-xs text-gray-500">{item.desc}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* Industry Insights */}
+          <div className="space-y-2">
+            <div className="flex items-center gap-2 text-blue-600 font-semibold mb-2">
+              <BarChart2 size={16} />
+              <span>Industry Insights</span>
+            </div>
+            {[
+              { title: "Tech Industry Trends", icon: <Code size={14} />, desc: "Latest developments in technology careers", path: "/blog/tech-trends" },
+              { title: "Healthcare Careers", icon: <HeartHandshake size={14} />, desc: "Opportunities in healthcare industry", path: "/blog/healthcare-careers" },
+              { title: "Business & Finance", icon: <TrendingUp size={14} />, desc: "Insights for business professionals", path: "/blog/business-finance" },
+              { title: "Creative Industries", icon: <Palette size={14} />, desc: "Navigating creative career paths", path: "/blog/creative-industries" }
             ].map((item, index) => (
               <Link 
                 key={index}
