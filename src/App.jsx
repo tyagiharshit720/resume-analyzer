@@ -7,6 +7,8 @@ import ResumeSkills from "./pages/ResumeSkills";
 import ResumeWritingGuide from "./pages/ResumeWritingGuide";
 import LandingPage from "./pages/LandingPage";
 import Footer from "./components/Footer";
+import LatestResumeTrands from "./pages/blogs/LatestResumeTrends";
+import BlogDetails from "./pages/blogs/BlogDetails";
 
 function App() {
   return (
@@ -30,6 +32,16 @@ const AppContent = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/resume-skills" element={<ResumeSkills />} />
           <Route path="/resume-writing-guide" element={<ResumeWritingGuide />} />
+
+
+
+
+
+          {/* blogs */}
+          <Route path="/blog/resume-trends" element={<LatestResumeTrands />} />
+          <Route path="/blog/:id" element={<BlogDetails />} />
+
+
         </Routes>
       </div>
       {!isLoginPage && <Footer />}
