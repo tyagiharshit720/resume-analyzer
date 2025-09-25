@@ -9,6 +9,7 @@ import LandingPage from "./pages/LandingPage";
 import Footer from "./components/Footer";
 import LatestResumeTrands from "./pages/blogs/LatestResumeTrends";
 import BlogDetails from "./pages/blogs/BlogDetails";
+import AtsOptimization from "./pages/blogs/atsOptimization/AtsOptimization";
 
 function App() {
   return (
@@ -40,6 +41,9 @@ const AppContent = () => {
           {/* blogs */}
           <Route path="/blog/resume-trends" element={<LatestResumeTrands />} />
           <Route path="/blog/:id" element={<BlogDetails />} />
+
+          <Route path="/blog/ats-optimization" element={<AtsOptimization />} />
+
 
 
         </Routes>

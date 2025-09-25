@@ -140,6 +140,7 @@ const BlogDetails = () => {
         <p class="text-gray-700 mb-4 leading-relaxed">Send a thoughtful thank-you note, reflect on your performance, and continue practicing regardless of the outcome.</p>
       `
     },
+
     'modern-resume-layouts': {
       title: "Modern Resume Layouts That Get You Noticed in 2025",
       tag: "RESUME TIPS",
@@ -298,7 +299,252 @@ const BlogDetails = () => {
           </div>
         </div>
       `
-    }
+    },
+
+    // Ats Blog
+
+    'ats-optimization-guide': {
+  title: "How to Optimize Your Resume for Applicant Tracking Systems",
+  tag: "ATS TIPS",
+  published: "January 15, 2025",
+  updated: "September 23, 2025",
+  readTime: "8 min read",
+  author: {
+    name: "Harshit Kumar Tyagi", // You can replace with the real author
+    role: "Career Consultant",
+    avatar: "👨‍💻"
+  },
+  excerpt: "Learn the best strategies to make your resume ATS-friendly, ensuring it passes automated filters and reaches recruiters efficiently.",
+  content: `
+    <div class="mb-8">
+      <p class="text-gray-700 mb-4 leading-relaxed text-lg">
+        Applicant Tracking Systems (ATS) are used by recruiters to filter resumes before human review. Optimizing your resume for ATS can dramatically improve your chances of getting noticed.
+      </p>
+    </div>
+
+    <h2 class="text-3xl font-bold mt-12 mb-6 text-gray-900 border-b pb-2">1. Use ATS-Friendly Resume Formats</h2>
+    <p class="text-gray-700 mb-4 leading-relaxed">
+      Stick to simple, clean formats without excessive graphics, tables, or columns. PDFs or DOCX are generally safe.
+    </p>
+
+    <h2 class="text-3xl font-bold mt-12 mb-6 text-gray-900 border-b pb-2">2. Incorporate Relevant Keywords</h2>
+    <p class="text-gray-700 mb-4 leading-relaxed">
+      Include keywords from the job description in your resume. Focus on skills, technologies, and industry-specific terms.
+    </p>
+
+    <div class="bg-blue-50 border-l-4 border-blue-500 p-6 my-8 rounded-r-lg">
+      <p class="text-blue-800 font-medium text-lg">
+        💡 Pro Tip: Mirror the exact phrasing from the job posting where relevant—ATS often searches for exact keyword matches.
+      </p>
+    </div>
+
+    <h2 class="text-3xl font-bold mt-12 mb-6 text-gray-900 border-b pb-2">3. Avoid Common ATS Mistakes</h2>
+    <div class="grid md:grid-cols-2 gap-6 my-8">
+      <div class="bg-green-50 p-6 rounded-lg">
+        <h4 class="font-semibold text-green-900 mb-3">✅ Do's</h4>
+        <ul class="list-disc list-inside text-green-800 space-y-2">
+          <li>Use standard headings like Education, Experience, Skills</li>
+          <li>Include measurable achievements</li>
+          <li>Maintain consistent formatting</li>
+        </ul>
+      </div>
+      <div class="bg-red-50 p-6 rounded-lg">
+        <h4 class="font-semibold text-red-900 mb-3">❌ Don'ts</h4>
+        <ul class="list-disc list-inside text-red-800 space-y-2">
+          <li>Use images, tables, or graphics for key info</li>
+          <li>Overuse uncommon fonts or colors</li>
+          <li>Include headers/footers with important text</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="text-3xl font-bold mt-12 mb-6 text-gray-900 border-b pb-2">4. Final Checklist</h2>
+    <ul class="list-disc list-inside text-gray-700 space-y-2">
+      <li>Proofread carefully</li>
+      <li>Test your resume on ATS simulators</li>
+      <li>Update keywords for each job application</li>
+    </ul>
+  `
+},
+'ats-optimization-guide': {
+  title: "How to Optimize Your Resume for Applicant Tracking Systems",
+  tag: "ATS TIPS",
+  published: "January 15, 2025",
+  updated: "September 23, 2025",
+  readTime: "8 min read",
+  author: {
+    name: "Harshit Kumar Tyagi",
+    role: "Career Consultant",
+    avatar: "👨‍💻"
+  },
+  excerpt: "Learn the best strategies to make your resume ATS-friendly, ensuring it passes automated filters and reaches recruiters efficiently.",
+  content: `
+    <div class="mb-8">
+      <p class="text-gray-700 mb-4 leading-relaxed text-lg">
+        Applicant Tracking Systems (ATS) are used by recruiters to filter resumes before human review. Optimizing your resume for ATS can dramatically improve your chances of getting noticed.
+      </p>
+    </div>
+
+    <h2 class="text-3xl font-bold mt-12 mb-6 text-gray-900 border-b pb-2">1. Use ATS-Friendly Resume Formats</h2>
+    <p class="text-gray-700 mb-4 leading-relaxed">
+      Stick to simple, clean formats without excessive graphics, tables, or columns. PDFs or DOCX are generally safe.
+    </p>
+
+    <h2 class="text-3xl font-bold mt-12 mb-6 text-gray-900 border-b pb-2">2. Incorporate Relevant Keywords</h2>
+    <p class="text-gray-700 mb-4 leading-relaxed">
+      Include keywords from the job description in your resume. Focus on skills, technologies, and industry-specific terms.
+    </p>
+
+    <div class="bg-blue-50 border-l-4 border-blue-500 p-6 my-8 rounded-r-lg">
+      <p class="text-blue-800 font-medium text-lg">
+        💡 Pro Tip: Mirror the exact phrasing from the job posting where relevant—ATS often searches for exact keyword matches.
+      </p>
+    </div>
+
+    <h2 class="text-3xl font-bold mt-12 mb-6 text-gray-900 border-b pb-2">3. Avoid Common ATS Mistakes</h2>
+    <div class="grid md:grid-cols-2 gap-6 my-8">
+      <div class="bg-green-50 p-6 rounded-lg">
+        <h4 class="font-semibold text-green-900 mb-3">✅ Do's</h4>
+        <ul class="list-disc list-inside text-green-800 space-y-2">
+          <li>Use standard headings like Education, Experience, Skills</li>
+          <li>Include measurable achievements</li>
+          <li>Maintain consistent formatting</li>
+        </ul>
+      </div>
+      <div class="bg-red-50 p-6 rounded-lg">
+        <h4 class="font-semibold text-red-900 mb-3">❌ Don'ts</h4>
+        <ul class="list-disc list-inside text-red-800 space-y-2">
+          <li>Use images, tables, or graphics for key info</li>
+          <li>Overuse uncommon fonts or colors</li>
+          <li>Include headers/footers with important text</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="text-3xl font-bold mt-12 mb-6 text-gray-900 border-b pb-2">4. Final Checklist</h2>
+    <ul class="list-disc list-inside text-gray-700 space-y-2">
+      <li>Proofread carefully</li>
+      <li>Test your resume on ATS simulators</li>
+      <li>Update keywords for each job application</li>
+    </ul>
+  `
+},
+
+'ats-keywords': {
+  title: "Keywords That Get Your Resume Past ATS Filters",
+  tag: "RESUME STRATEGY",
+  published: "February 20, 2025",
+  updated: "September 23, 2025",
+  readTime: "10 min read",
+  author: {
+    name: "Harshit Kumar Tyagi",
+    role: "Career Consultant",
+    avatar: "👨‍💻"
+  },
+  excerpt: "Discover the most effective keywords and phrases that help your resume pass ATS filters and reach recruiters' eyes.",
+  content: `
+    <div class="mb-8">
+      <p class="text-gray-700 mb-4 leading-relaxed text-lg">
+        Applicant Tracking Systems scan resumes for keywords relevant to the job. Including the right keywords increases your chances of moving to the interview stage.
+      </p>
+    </div>
+
+    <h2 class="text-3xl font-bold mt-12 mb-6 text-gray-900 border-b pb-2">1. Analyze Job Descriptions</h2>
+    <p class="text-gray-700 mb-4 leading-relaxed">
+      Identify frequently mentioned skills, certifications, and responsibilities. These are your target keywords.
+    </p>
+
+    <h2 class="text-3xl font-bold mt-12 mb-6 text-gray-900 border-b pb-2">2. Use Industry-Specific Terms</h2>
+    <p class="text-gray-700 mb-4 leading-relaxed">
+      Include terms specific to your industry, software, or tools relevant to the position.
+    </p>
+
+    <h2 class="text-3xl font-bold mt-12 mb-6 text-gray-900 border-b pb-2">3. Integrate Keywords Naturally</h2>
+    <p class="text-gray-700 mb-4 leading-relaxed">
+      Avoid keyword stuffing. Integrate them naturally in your work experience, skills, and summary.
+    </p>
+  `
+},
+
+'ats-friendly-formats': {
+  title: "ATS-Friendly Resume Formats and Templates",
+  tag: "TECHNICAL GUIDE",
+  published: "March 10, 2025",
+  updated: "September 23, 2025",
+  readTime: "12 min read",
+  author: {
+    name: "Harshit Kumar Tyagi",
+    role: "Career Consultant",
+    avatar: "👨‍💻"
+  },
+  excerpt: "Explore templates and formats that ATS systems can easily read and parse, maximizing your resume's chances.",
+  content: `
+    <div class="mb-8">
+      <p class="text-gray-700 mb-4 leading-relaxed text-lg">
+        Not all resumes are ATS-friendly. Certain formats, templates, and layouts can get your resume rejected automatically. Here’s how to structure it properly.
+      </p>
+    </div>
+
+    <h2 class="text-3xl font-bold mt-12 mb-6 text-gray-900 border-b pb-2">1. Recommended Layouts</h2>
+    <p class="text-gray-700 mb-4 leading-relaxed">
+      Use single-column layouts with clear section headings: Contact Info, Summary, Skills, Experience, Education.
+    </p>
+
+    <h2 class="text-3xl font-bold mt-12 mb-6 text-gray-900 border-b pb-2">2. Template Guidelines</h2>
+    <ul class="list-disc list-inside text-gray-700 space-y-2">
+      <li>Simple fonts like Arial, Calibri, or Times New Roman</li>
+      <li>Consistent font size for headings and body</li>
+      <li>Avoid graphics, images, or unusual symbols</li>
+    </ul>
+
+    <h2 class="text-3xl font-bold mt-12 mb-6 text-gray-900 border-b pb-2">3. Test Before Submitting</h2>
+    <p class="text-gray-700 mb-4 leading-relaxed">
+      Upload your resume to an ATS simulator to check readability and parsing accuracy.
+    </p>
+  `
+},
+
+'ats-mistakes': {
+  title: "Common ATS Mistakes and How to Avoid Them",
+  tag: "CAREER ADVICE",
+  published: "April 25, 2025",
+  updated: "September 23, 2025",
+  readTime: "9 min read",
+  author: {
+    name: "Harshit Kumar Tyagi",
+    role: "Career Consultant",
+    avatar: "👨‍💻"
+  },
+  excerpt: "Avoid common pitfalls that cause your resume to fail ATS scanning and reduce your chances of landing interviews.",
+  content: `
+    <div class="mb-8">
+      <p class="text-gray-700 mb-4 leading-relaxed text-lg">
+        Even small mistakes in formatting, keywords, or structure can cause ATS systems to reject your resume. Learn the most common mistakes and how to fix them.
+      </p>
+    </div>
+
+    <h2 class="text-3xl font-bold mt-12 mb-6 text-gray-900 border-b pb-2">1. Overcomplicated Formatting</h2>
+    <p class="text-gray-700 mb-4 leading-relaxed">
+      Avoid tables, graphics, columns, or text boxes that ATS cannot parse correctly.
+    </p>
+
+    <h2 class="text-3xl font-bold mt-12 mb-6 text-gray-900 border-b pb-2">2. Missing Keywords</h2>
+    <p class="text-gray-700 mb-4 leading-relaxed">
+      Review job descriptions and include critical keywords in your resume’s experience and skills sections.
+    </p>
+
+    <h2 class="text-3xl font-bold mt-12 mb-6 text-gray-900 border-b pb-2">3. File Type Errors</h2>
+    <p class="text-gray-700 mb-4 leading-relaxed">
+      Use ATS-friendly file formats like DOCX or PDF; avoid uncommon file types that may not be readable.
+    </p>
+  `
+}
+
+
+
+
+
+
   };
 
   const post = blogContent[id];
