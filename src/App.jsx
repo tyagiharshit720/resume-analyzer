@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import LatestResumeTrands from "./pages/blogs/LatestResumeTrends";
 import BlogDetails from "./pages/blogs/BlogDetails";
 import AtsOptimization from "./pages/blogs/atsOptimization/AtsOptimization";
+import AllBlogs from "./pages/AllBlogs";
 
 function App() {
   return (
@@ -33,6 +34,8 @@ const AppContent = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/resume-skills" element={<ResumeSkills />} />
           <Route path="/resume-writing-guide" element={<ResumeWritingGuide />} />
+          <Route path="/all-blogs" element={<AllBlogs />} />
+
 
 
 

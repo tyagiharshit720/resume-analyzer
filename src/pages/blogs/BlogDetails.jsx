@@ -742,7 +742,7 @@ const BlogDetails = () => {
         <section className="mt-12">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-3xl font-bold text-gray-900">Related Articles You Might Like</h2>
-            <Link to="/" className="text-blue-600 hover:text-blue-800 font-semibold text-sm">
+            <Link to="/all-blogs" className="text-blue-600 hover:text-blue-800 font-semibold text-sm">
               View All →
             </Link>
           </div>
